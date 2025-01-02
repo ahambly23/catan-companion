@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catan Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Catan Companion</a></h1>
+    </header>
+
+    <nav>
+        <a href="randomiser.html">Board Randomizer</a>
+        <a href="tracker.html">Game Tracker</a>
+    </nav>
+
+    <main>
+        <section id="vp-tracker">
+            <h2>Victory Point Tracker</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>VPs</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="table-body">
+        <!-- Player rows will be dynamically added here -->
+    </tbody>
+</table>
+<div class="add-player">
+    <button id="add-new-player" class="btn" onclick="addNewPlayer()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" />
+        </svg>
+    </button>
+</div>
+
+        </section>
+        
+        <section id="dice-roller">
+            <h2>Dice Roller</h2>
+            <button class="btn" onclick="rollDice()">Roll Dice</button>
+            <div id="dice-display">Roll result: <span id="dice-result"></span></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
